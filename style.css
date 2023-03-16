@@ -1,0 +1,855 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+  
+    /*--------------nav--------*/
+  .navbar {
+      background:#fff;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      position: sticky;
+      top:0;
+      z-index:999;
+  }
+  
+  
+  .navbar__container{
+      display:flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto ;
+      padding: 0 50px;
+  }
+  
+  
+  .navbar__menu{
+      display: flex;
+      align-items: center;
+      list-style:none;
+      text-align:center;
+  }
+  
+  .navbar__item{
+      height: 80px;
+  }
+  
+  .navbar__links{
+      color:#6c757d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 0 1rem;
+      height: 100%;
+      position: relative;
+  }
+  .navbar__btn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1 rem;
+      width: 100%;
+  }
+  
+  
+  .button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 10px 20px;
+      height:100%;
+      width: 100%;
+      border:none;
+      outline: none;
+      border-radius: 4px;
+      background: #6c757d;
+      color: #fff;
+      
+  }
+  .button:hover{
+      background:darkolivegreen;
+      transition:all 0.3s ease;
+  }
+  .navbar__links::after{
+      content: '';
+      height: 3px;
+      width: 0;
+      background: darkolivegreen;
+      position: absolute;
+      left: 0;
+      bottom: -0.5px;
+      transition:0.5s;
+  }
+  
+  .navbar__links:hover::after{
+      width:100% ;
+  }
+
+    /*--------------anv end --------*/
+ /*-----------part1  start--------*/
+ 
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url(background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: gray;
+    font-size: 100px;
+    font-family: 'Akaya Telivigala', cursive;
+    
+}
+p{
+    color:gray;
+    font-size: 35px;
+    line-height: 35px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(1.png);
+}
+.card2{
+    background-image: url(2.png);
+}
+.card3{
+    background-image: url(3.png);
+}
+.card4{
+    background-image: url(4.png);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+
+
+/*--------------part1  end--------*/
+
+/*--------------form start--------*/
+
+
+  .form{
+    background-image: url(background.png);
+    height: 800px;
+}
+
+.form-text{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+    margin: 0 10px;
+
+}
+.form-text h1{
+    color: gray;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.form-text p{
+    color: gray;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: large;
+}
+
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid gray;
+    font-size: 20px;
+    color: gray;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    font-family: 'Akaya Telivigala', cursive;
+    background: none;
+    border: 1px solid gray;;
+    font-size: 20px;
+    color: gray;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: gray;
+    font-size: 25px;
+}
+.main-form div label{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+    color: gray;
+    font-size: 25px;
+
+}
+#submit{
+    width: 100%;
+    text-align: center;
+}
+#submit input{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color:gray;
+    color: black;
+    transition: all .3s;
+}
+#submit input:hover{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: darkolivegreen;
+    color: #fff;
+}
+#submit input:active{
+    font-size: 19px;
+    background-color: rgb(46, 20, 5) ;
+    color: #fff ;
+}
+
+/*--------------footer start--------*/
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px ;
+    background: white;
+    color: gray;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 10px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid gray;
+    color: gray;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+.fab{
+    color: #6c757d;
+}
+
+/*--------------artworks page--------*/
+.hero{
+   color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color:gray;
+}
+    
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+}    
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+}
+.user-text{
+    background: #2d3a59;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: gray;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.user-text p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.user-text h3{
+    margin: 35px 0 5px;
+    color: grey;
+}
+.user-text button {
+    background: white;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.containerart{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.btn{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: gray;
+    cursor: pointer;
+    transition: 0.5s;    
+}
+.active{
+    width: 45px;
+}
+
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+/*------------ php--------*/
+button1{
+    
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color:gray;
+    color: black;
+    transition: all .3s;
+}
+
+.button1:hover{
+font-family: 'Akaya Telivigala', cursive;
+width: 200px;
+background-color: darkolivegreen;
+color: #fff;
+}
+
+/*-------------- search page--------*/
+
+ .searchform{
+    background-image: url(background.png);
+    height: 600px;
+}
+
+
+
+ 
+
+
+/*--------------exhibition page--------*/
+.heroe{
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+    background-image: url(https://media.giphy.com/media/M52wyuahvQfJK/giphy.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    color: #fff;
+    padding: 0 8%;
+}
+.heroe h1{
+    font-size: 75px;
+    margin-top: 12%;
+}
+
+
+.heroee h1{
+    font-size: 75px;
+    margin-top: 12%;
+}
+
+.heroe button{
+    background: white;
+    border: 0;
+    outline: none;
+    padding: 15px 35px;
+    color: #fff;
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.heroee button{
+    background: white;
+    border: 0;
+    outline: none;
+    padding: 15px 35px;
+    color: #fff;
+    margin-top: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.indicatore span{
+    display: inline-block;
+    background: #3a3a3a;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.indicatore{
+    margin-top: 150px;
+}
+
+
+.indicatore span.active{
+    background: #bfbfbf;
+}
+
+.cta{
+    position: absolute;
+    width: 25%;
+    min-width: 250px;
+    right: 8%;
+    bottom: 100px;
+}
+
+/*--------------gallery page--------*/
+.banner1,.banner2,.banner3,.banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner1 img{
+   width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+.banner2 img{
+    width: 120%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     animation: zoom-out 3s linear infinite;
+ }
+ .banner3 img{
+    width: 120%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     animation: zoom-out 3s linear infinite;
+ }
+ .banner4 img{
+    width: 120%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     animation: zoom-out 3s linear infinite;
+ }
+
+ .banner1 button{
+    background: white;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .banner2 button{
+    background: white;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+ .banner3 button{
+    background: white;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .banner4 button{
+    background: white;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+.text-box{
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #fff;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+.text-box h1{
+    margin-bottom: 40px;
+}
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+.text-box span{
+    background: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }    
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }    
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }    
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }    
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box1{
+    animation-delay: 0s;
+}
+.text-box2{
+    animation-delay: 3s;
+}
+.text-box3{
+    animation-delay: 6s;
+}
+.text-box4{
+    animation-delay: 9s;
+}
+
+/*--------------what's on  page--------*/
+
+.rowon{
+    background-image: url(background.png);
+    width: 80%;
+    margin: 4% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.colon{
+    flex-basis: 25%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.colon img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+.colon p{
+    margin: 20px 0;
+}
+.colon button{ background: white;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.social-link .fa{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #000;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.social-link .fa:hover{
+    background: #000;
+    color: gray;
+    transform: translateY(-7px);
+}
+.colon:hover img{
+    transform: scale(1.1);
+    
+}
+.colon span{
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid gray;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.colon .arrow{
+    right: unset;
+    left: 0;
+    border-left: 15px solid gray;
+    border-right: 15px solid transparent;
+}
+@media screen and (max-width: 770px){
+    .row{
+        width: 95%;
+    }
+    .col{
+        flex-basis: 50%;
+        font-size: 14px;
+    }
+    .social-link .fa{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    
+    }
+    .row .col:nth-child(1){
+        order: 1;
+    }
+    .row .col:nth-child(2){
+        order: 2;
+    }
+    .row .col:nth-child(3){
+        order: 5;
+    }
+    .row .col:nth-child(4){
+        order: 6;
+    }
+    .row .col:nth-child(5){
+        order: 3;
+    }
+    .row .col:nth-child(6){
+        order: 4;
+    }
+    .row .col:nth-child(7){
+        order: 7;
+    }
+    .row .col:nth-child(8){
+        order: 8;
+    }
+}
+
+

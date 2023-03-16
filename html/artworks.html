@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>informatics project</title>
+        <link rel="stylesheet" tpye="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!--nav section-->
+<nav class="navbar">
+    <div class="navbar__container">
+    <img src="logo.png" id="nabar__logo" width="50" height="50"> 
+    <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a href="artworks.html" class="navbar__links">Artworks </a>
+        </li>
+        <li class="navbar__item">
+            <a href="exhibition.html" class="navbar__links">Exhibition</a>
+        </li>
+        <li class="navbar__item"> 
+            <a href="gallery.html" class="navbar__links"> Gallery</a>
+        </li>
+        <li class="navbar__item"> 
+            <a href="whatson.html" class="navbar__links">What'son</a>
+        </li>
+       
+        <li class="navbar__btn">
+            <a href="project.html" class="button">Home Page</a>
+        </li>
+    </ul>
+    </div>
+  </nav>
+<!--part   section-->
+<div class="hero">
+    <h1></h1>
+    
+    <div class="containerart">
+      <div class="indicator">
+          <span class="btn active"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+      </div>
+       <div class="testimonial">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+            <div class="user-text">
+                <p>A moderately abstract landscape painting (1889) of an expressive night sky over a small hillside village, one of Dutch artist Vincent van Gogh's most celebrated works.</p>
+                <h3>THE STARRY NIGHT</h3>
+                <p>Vincent van Gogh</p>
+                <br>
+                
+            </div>
+            <div class="user-img">
+                <img src="10.jpeg">
+            </div>
+        </div>
+            <div class="slide-col">
+            <div class="user-text">
+                <p>The Kiss is an oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt.</p>
+                <h3>The Kiss</h3>
+                <p>Edward Hopper</p>
+                
+            </div>
+            <div class="user-img">
+                <img src="9.jpeg">
+            </div>
+        </div>
+            <div class="slide-col">
+            <div class="user-text">
+                <p>Girl with a Pearl Earring is an oil painting by Dutch Golden Age painter Johannes Vermeer, dated c. 1665. Going by various names over the centuries.</p>
+                <h3>Girl with a Pearl Earring</h3>
+                <p>Johannes vermme</p>
+                
+            </div>
+            <div class="user-img">
+                <img src="8.jpeg">
+            </div>
+        </div>
+            <div class="slide-col">
+            <div class="user-text">
+                <p>The Scream is a composition created by Norwegian artist Edvard Munch in 1893. The agonized face in the painting has become one of the most iconic images of art, seen as symbolizing the anxiety of the human condition. </p>
+                <h3>Scream</h3>
+                <p>Edvard Munch</p>
+              
+            </div>
+            <div class="user-img">
+                <img src="7.jpeg">
+            </div>
+            
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+    var btn = document.getElementsByClassName("btn");
+    var slide = document.getElementById("slide");
+    
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    btn[3].onclick = function(){
+        slide.style.transform = "translateX(-2400px)";
+        for(i=0;i<4;i++){
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+   
+</script>
+
+
+
+<!-- search section start -->
+
+ 
+<div class="searchform">
+    <div class="form-text">
+        <h1><span></span>Book ARTWORKS  <span></span></h1>
+        <p>Choose what you like</p>
+    </div>
+    <div class="main-form">
+        <form action="artworksearch.php" method="post">
+        
+           
+            <div>
+              <label for = "artworks">artworks</label>
+               <select name="artworks" id = "artworks">
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+                <option value="A4">A4</option>
+             
+            </select>
+            </div>
+            <div id="submit">
+                <input type="submit" value="SUBMIT" id="submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- search section ends -->
+
+
+
+<!--footer section-->
+<div class="footer">
+    <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Shop</a>
+        <a href="#">Blog</a>
+    </div>
+    <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form>
+            <input type="email" placeholder="Your Email Address " required>
+            <br>
+            <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+    </div>
+    <div class="col-1">
+        <h3>HELP</h3>
+        <a href="#">Contact Us</a>
+        <a href="#">Support</a>
+        
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-behance"></i>
+        </div>    
+    </div>
+</div>       
+        </body> 
+        </html>
